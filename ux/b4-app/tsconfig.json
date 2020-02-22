@@ -1,0 +1,12 @@
+// 将Typescript转换为Javascript的配置文件
+{
+    "compilerOptions": {
+        "outDir": "./dist/", // 存放转换好的.js文件的目录
+        "sourceMap": true,
+        "module": "CommonJS", // 使用哪种模块系统处理依赖
+        "target": "ES5", // 转换后文件的ECMAScript版本
+        "lib": ["DOM", "ES2015.Promise", "ES5"], // 指定Typescript需要使用的内置类型
+        "allowJs": true, // 是否对.js文件进行编译
+        "alwaysStrict": true 
+    }
+}
